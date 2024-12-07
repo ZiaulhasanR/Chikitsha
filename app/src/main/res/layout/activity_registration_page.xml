@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RegistrationPage">
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <RadioButton
+        android:id="@+id/femaleId"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textColor="#68231E"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/maleId"
+        app:layout_constraintEnd_toEndOf="@+id/lastN"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/maleId"
+        app:layout_constraintTop_toTopOf="@+id/maleId"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lastN"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Last name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/firstN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstN"
+        app:layout_constraintTop_toBottomOf="@+id/firstN" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="#632622"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstN"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="First name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioButton
+        android:id="@+id/maleId"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Male"
+        android:textColor="#68231E"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/lastN"
+        app:layout_constraintTop_toBottomOf="@+id/lastN" />
+
+    <EditText
+        android:id="@+id/DobId"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="DOB(dd/mm/yyyy)"
+        android:inputType="date"
+        android:textColorHint="#672924"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lastN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lastN"
+        app:layout_constraintTop_toBottomOf="@+id/lastN" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/DobId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DobId"
+        app:layout_constraintTop_toBottomOf="@+id/DobId" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

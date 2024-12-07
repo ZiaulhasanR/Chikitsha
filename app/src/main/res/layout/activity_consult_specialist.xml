@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConsultSpecialistID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consultspecialist">
+
+    <Button
+        android:id="@+id/OtherSpecialist"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:text="Other Specialist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/FemaleGynecologist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/FemaleGynecologist"
+        app:layout_constraintTop_toBottomOf="@+id/FemaleGynecologist"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/FemaleGynecologist"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:text="Female Gynecologist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Psychiatrist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Psychiatrist"
+        app:layout_constraintTop_toBottomOf="@+id/DiabetesSpecialist"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <Button
+        android:id="@+id/Psychiatrist"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:text="Psychiatrist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/DiabetesSpecialist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DiabetesSpecialist"
+        app:layout_constraintTop_toBottomOf="@+id/DiabetesSpecialist"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/DiabetesSpecialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diabetes Specialist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ChildSpecialist"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ChildSpecialist"
+        app:layout_constraintTop_toBottomOf="@+id/ChildSpecialist"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Button
+        android:id="@+id/ChildSpecialist"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:text="Child Specialist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavvigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavvigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
